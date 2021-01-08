@@ -8,8 +8,10 @@ def estimate_pi(n):
 		y = random.uniform(0, 1)
 		distance = x**2 +  y**2
 		if distance <= 1:
-			num_point_cirle += 1
+			num_point_circle += 11
 		num_point_total += 1
 	return 4 * num_point_circle/num_point_total
 
-estimate_pi(10)
+if __name__ == "__main__":
+    a = int(input("Number, attention of int overflow: "))
+    print("The calculated number of PI is: {}".format(estimate_pi(a)))
